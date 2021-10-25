@@ -1,0 +1,180 @@
+.topbar {
+    width: 100%;
+    height: 54px;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: white;
+    border-bottom: 2px solid lightgray;
+    z-index: 3;
+}
+
+.topbar ion-icon {
+    position: absolute;
+    font-size: 25px;
+    top: 20%;
+
+}
+
+.topbar img {
+    position: absolute;
+    top: 30%;
+    left: 25%;
+}
+
+.topbar section{
+    position: absolute;
+    border: 2px solid #979797;
+    width: 17%;
+    left: 35%;
+    top: 25%;
+    border-radius: 10px;
+    color:#979797;
+    height: 50%;
+    text-align: center;
+
+}
+
+.topbarmobile {
+    width: 100%;
+    height: 54px;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: white;
+    border-bottom: 2px solid lightgray;
+    z-index: 3;
+    display: none;
+}
+
+.topbarmobile ion-icon {
+    position: absolute;
+    font-size: 25px;
+    top: 20%;
+
+}
+
+.topbarmobile img {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+}
+
+.topbarmobile section{
+    position: absolute;
+    border: 2px solid #979797;
+    width: 17%;
+    left: 35%;
+    top: 25%;
+    border-radius: 10px;
+    color:#979797;
+    height: 50%;
+    text-align: center;
+
+}
+
+.bottombar {
+    width: 100%;
+    height: 54px;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    background-color: white;
+    border-bottom: 2px solid lightgray;
+    z-index: 3;
+    font-size: 25px;
+    display: none;
+}
+
+.stories {
+    position: relative;
+    overflow: hidden;
+    margin-top: 100px;
+    margin-left: 20%;
+    background-color: white;
+    height: 150px;
+    width: 50%;
+    border: 2px solid lightgray;
+    border-radius: 20px;
+
+}
+
+.storiesbg {
+    position:absolute;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 25px;
+}
+
+.storiesimg {
+    position: absolute;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    top: 21%;
+    
+}
+
+.sidebar {
+    position: fixed;
+    top: 54px;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    background-color: white;
+}
+
+.posts {
+    width: 50%;
+    margin-left: 20%;
+    height: 2000px;
+}
+
+.post {
+    margin-top: 20px;
+    border-radius: 20px;
+    border: 2px solid gray;
+    width: 100%;
+    height: 1000px;
+
+}
+
+@media (max-width: 935px){
+    .sidebar{
+        display: none;
+    }
+    .posts{
+        margin-left: 25%;
+    }
+    .stories{
+        margin-left: 25%;
+    }
+}
+
+@media (max-width: 614px){
+    .sidebar{
+        display: none;
+    }
+    .posts{
+        margin-left: 0%;
+        width: 100%;
+    }
+    .stories{
+        margin-left: 0%;
+        width: 100%;
+    }
+    .stories ion-icon{
+        display: none;
+    }
+    .topbar{
+        display: none;
+    }
+    .topbarmobile{
+        display: grid;
+    }
+    .bottombar{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
